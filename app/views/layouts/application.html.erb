@@ -16,6 +16,8 @@
 
 <section class="content">
 
+	<%= image_tag("Logo.png", :alt => "RoundTabled", :class => "logo") %>
+
 	<% flash.each do |key, value| %>
 		<div class="flash <%= key %>"><%= value %></div>
 	<% end %>

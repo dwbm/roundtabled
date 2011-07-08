@@ -10,4 +10,9 @@ describe "LayoutLinks" do
     get '/thanks'
     response.should have_selector('title', :content => "thanks")
   end
+  
+  it "should have a launch page at '/launch'" do
+    get '/launch'
+    response.should have_selector('title', :content => "launch")
+  end
 end

@@ -1,8 +1,12 @@
 Roundtabled::Application.routes.draw do
+  get "users/new"
+
+  match '/launch', :to => 'users#new'
+  
   match '/about',  :to => 'pages#about'
   match '/thanks', :to => 'pages#thanks'
   
-  root :to => 'pages#about'
+  root :to => 'users#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
