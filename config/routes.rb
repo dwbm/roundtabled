@@ -1,5 +1,5 @@
 Roundtabled::Application.routes.draw do
-  get "users/new"
+  resources :users
 
   match '/launch', :to => 'users#new'
   
