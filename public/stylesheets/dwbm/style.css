@@ -98,6 +98,7 @@ input:focus+.submit-button { opacity:1; }
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 12px;
+  margin-top: 20px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
@@ -121,4 +122,6 @@ input:focus+.submit-button { opacity:1; }
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+  margin-left: 10px;
+  margin-top: 10px;
 }
