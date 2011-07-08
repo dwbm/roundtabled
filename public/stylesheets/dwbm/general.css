@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+body {
+	background: #FFFFFF;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 1;
+	color: #000000;
+	position:relative;
+}
+
+
+/* ** ** Common Addative Classes ** ** */
+.left, .float_left {float:left;}
+.right, .float_right {float:right;}
+.clear {clear:both; display:block; overflow:hidden; visibility:hidden; height:0px;}
+.clear-left, .clear_left {clear:left;}
+.clear-right, .clear_right {clear:right;}
+.hide {display:none;}
+.block {display:block !important;}
+.inline {display:inline !important;}
+
+.align_right {text-align:right;}
+.align_left {text-align:left;}
+.align_center {text-align:center;}
+.align_justify {text-align:justify;}
+
+.bold {font-weight:600;}
+.italic {font-style:italic;}
+
+.small-text {
+	font-size: 0.5em; /* 16px x 0.75em = 12px */
+	line-height: 2; /* line-height rythmn of 20px: 20px / 12px = 1.667 */
+	margin-top: 2em; 
+	margin-bottom: 2em; 
+}
+
+.transparent {
+	background-color: rgba(255,255,255,0.85); /* white background, 85% opacity, children do not inherit */
+}
+
+a {
+	color: #C18939;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	text-decoration:underline;
+}
+a:active, a:visited { }
+
+blockquote {
+	quotes:none;
+	background-color: rgba(238,238,238,0.5); /* gray background, 50% opacity, children do not inherit */
+	padding: 15px;
+}
+
+blockquote.left {border-right:1px dashed #ccc; width:35%;} /* float blockquote left, and set width */
+blockquote.right {border-left:1px dashed #ccc; width:35%;} /* float blockquote right and set a width */
+
+/* ** ** Font Sizes and Styles ** ** */
+p {
+	font-size: 1em; /* 16px x 1em = 16px */
+	line-height: 1; /* line-height rythmn of 20px: 20px / 20px = 1 */
+	margin-top: 1em; /* 20px / 20px = 1 */
+	margin-bottom: 1em; /* 20px / 20px = 1 */
+}
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+	color: #000000;
+}
+h1 {
+	font-size: 3em; /* 20px x 3em = 60px */
+	line-height: 1.5; /* line-height rythmn of 20px: 60px / 60px = 1 */
+} 
+h2 {
+	font-size: 2em; /* 20px x 2em = 40px */
+	line-height: 1; /* line-height rythmn of 20px: 40px / 40px = 1 */
+} 
+
+/* ** ** ul li's ** ** */
+ul{
+  list-style:outside disc;
+}
+ul,ol{
+  margin:0;
+  padding:0;
+}
+li ul,li ol{
+  padding:0;
+  margin:0;
+}
+
+
+
+/* ** ** paragraph styling ** ** */
+p img.left {float:left;margin:1.52em 1.52em 1.52em 0;padding:0;}
+p img.right {float:right;margin:1.52em 0 1.52em 1.52em;}
+
+strong   		{	font-weight:600;}
+em, dfn  		{	font-style:italic;}
+dfn 	 		{   font-weight:600;}
+sup, sub 		{   line-height:0;}
+abbr, acronym   {	border-bottom:1px dashed #ccc;}
+address 		{	margin:0 0 1.5em;font-style:italic;}
+del 			{	color:#666;}
+pre, code, tt   {	font:1em 'andale mono', 'lucida console', monospace; display:block;}
+code 			{	display:inline;}
+pre 			{	margin:1.5em 0;white-space:pre;}
+
+
+
+
+/* *****  UNUSED STYLE DEFAULTS ******* 
+
+blockquote {
+		font-family: Georgia,"Times New Roman", Times, serif; 
+		margin:5px; 
+		padding:10px;
+		font-size:1.52em; 
+		color:#999; 
+		font-style:italic; 
+		line-height:1.3em; 
+	}
+	
+	/* ** ** custom select color ** ** */
+::selection {
+	background: #525252; /* Safari */
+	}
+::-moz-selection {
+	background: #525252; /* Firefox */
+	color:#fff;
+}
+	
+******* END OF UNUSED STYLE DEFAULTS ******* */

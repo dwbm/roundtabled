@@ -1,0 +1,124 @@
+/*
+Theme Name: RoundTabled
+Theme URI: roundtabled.com
+Description: The default theme for roundtabled.com, based on the 52Framework.
+Author: DWBM
+Author URI: danielwbmazzone.com
+.
+
+.
+*/
+
+/* *** HEADER *** */
+
+.content {
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.logo {
+	width: 100%;
+}
+
+/* *** FOOTER *** */
+
+footer.main-footer {
+	clear: both;
+	color: #333;
+	background-color: #FFFFFF;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: #5D0604;
+	border-width: 2px;
+	margin-bottom: 10px;
+}
+
+/* *** NOTIFY FORM *** */
+
+.notifyForm { 
+	margin-top: 25px;
+}
+
+.notifyForm .subscriberEmail {
+	color: #555;
+	border: none;
+	width: 300px;
+	margin: 10px 0;
+	font-size: 1em;
+	font-weight: bold;
+	float: left;
+	display: inline;
+	padding: 11px 0 10px 5px;
+}
+
+.notifyForm input {
+    padding: 5px;
+    width: 471px;
+    margin: 0px 0px 10px 0px;
+    border: 2px solid #ccc;
+}
+
+.submit-button { color:#999; opacity:0; display:inline;
+    transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+}
+input:focus+.submit-button { opacity:1; }
+
+
+.notifyForm input.submit-button {
+	float: left;
+	width: 150px;
+	color: #555;
+	font-size: 0.75em;
+	font-weight: bold;
+	display: inline;
+	padding: 11px 0 10px 5px;
+	margin: 10px 0;
+}
+
+/* *** ERROR MESSAGES *** */
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
