@@ -3,19 +3,11 @@
 <h2 class="align_right">assign, collect &amp; organize</h2>
 <h2 class="align_right">your publication's content</h2>
 
-
 <%= form_for(@user) do |f| %>
   <%= render 'shared/error_messages' %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="notifyForm">
+    <p>our e-mail is <a href="mailto:getorganized@roundtabled.com">getorganized@roundtabled.com</a></p>
+	<%= f.text_field :email, :class => "subscriberEmail", :placeholder => "what's yours?" %>
+	<%= f.submit "keep me posted", :class => "submit-button" %>
   </div>
 <% end %>
-
-<!-- <div class="notifyForm">
-	<input class="subscriberEmail" id="email" name="email" onblur="if(this.value == ''){ this.value = 'Here\'s my email.' }" onfocus="if(this.value == 'Here\'s my email.'){ this.value = '' }" type="text" value="Here's my email.">
-	<input type="submit" name="submit" value="Keep me posted" class="submit-button">
-</div> -->

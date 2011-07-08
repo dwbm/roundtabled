@@ -11,7 +11,7 @@ describe UsersController do
 	
 	it "should have the right title" do
 	  get 'new'
-	  response.should have_selector("title", :content => "RoundTabled | launch")
+	  response.should have_selector("title", :content => "RoundTabled | bring everything to the table")
 	end
 	
   end
@@ -32,7 +32,7 @@ describe UsersController do
 
       it "should have the right title" do
         post :create, :user => @attr
-        response.should have_selector("title", :content => "launch")
+        response.should have_selector("title", :content => "bring everything to the table")
       end
 
       it "should render the 'new' page" do
@@ -57,11 +57,7 @@ describe UsersController do
         post :create, :user => @attr
         response.should redirect_to(thanks_path)
       end
-	  
-	  it "should have a thank you message" do
-	    post :create, :user => @attr
-		flash[:success].should =~ /thanks. we'll keep you posted./i
-	  end
+	
     end
 	
   end

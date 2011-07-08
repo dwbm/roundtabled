@@ -13,6 +13,6 @@ describe "LayoutLinks" do
   
   it "should have a launch page at '/launch'" do
     get '/launch'
-    response.should have_selector('title', :content => "launch")
+    response.should have_selector('title', :content => "bring everything to the table")
   end
 end
