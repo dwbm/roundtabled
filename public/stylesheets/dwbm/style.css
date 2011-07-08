@@ -129,3 +129,9 @@ input:focus+.submit-button { opacity:1; }
   margin-left: 10px;
   margin-top: 10px;
 }
+
+/* *** USERS LIST *** */
+
+.users li {
+  list-style: none;
+}

@@ -1,10 +1,14 @@
 Roundtabled::Application.routes.draw do
+  match '/users', :to => 'users#new', :via => :get
+  
   resources :users
 
   match '/launch', :to => 'users#new'
   
   match '/about',  :to => 'pages#about'
   match '/thanks', :to => 'pages#thanks'
+  
+  match '/superobscureuserpage', :to => 'users#index'
   
   root :to => 'users#new'
 
