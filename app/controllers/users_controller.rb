@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
 	if @user.save
+	  UserMailer.registration_confirmation(@user).deliver
 	  redirect_to thanks_path
 	else
 	  @title = "bring everything to the table"

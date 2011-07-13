@@ -59,7 +59,7 @@ blockquote.right {border-left:1px dashed #ccc; width:35%;} /* float blockquote r
 
 /* ** ** Font Sizes and Styles ** ** */
 p {
-	font-size: 1em; /* 16px x 1em = 16px */
+	font-size: 1em; /* 20x x 1em = 20px */
 	line-height: 1; /* line-height rythmn of 20px: 20px / 20px = 1 */
 	margin-top: 1em; /* 20px / 20px = 1 */
 	margin-bottom: 1em; /* 20px / 20px = 1 */
